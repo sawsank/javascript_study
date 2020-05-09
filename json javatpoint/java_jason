@@ -1,0 +1,111 @@
+Java JSON
+The json.simple library allows us to read and write JSON data in Java. In other words, we can encode and decode JSON object in java using json.simple library.
+
+The org.json.simple package contains important classes for JSON API.
+
+JSONValue
+JSONObject
+JSONArray
+JsonString
+JsonNumber
+
+Install json.simple
+To install json.simple, you need to set classpath of json-simple.jar or add the Maven dependency.
+
+1) Download json-simple.jar, Or
+
+2) To add maven dependency, write the following code in pom.xml file.
+
+<dependency>  
+    <groupId>com.googlecode.json-simple</groupId>  
+    <artifactId>json-simple</artifactId>  
+    <version>1.1</version>  
+  </dependency>  
+1) Java JSON Encode
+Let's see a simple example to encode JSON object in java.
+
+import org.json.simple.JSONObject;    
+public class JsonExample1{    
+public static void main(String args[]){    
+JSONObject obj=new JSONObject();    
+  obj.put("name","sonoo");    
+  obj.put("age",new Integer(27));    
+  obj.put("salary",new Double(600000));    
+   System.out.print(obj);    
+}}    
+Output:
+
+{"name":"sonoo","salary":600000.0,"age":27}
+
+ 
+Java JSON Encode using Map
+Let's see a simple example to encode JSON object using map in java.
+
+import java.util.HashMap;  
+import java.util.Map;  
+import org.json.simple.JSONValue;  
+public class JsonExample2{    
+public static void main(String args[]){    
+  Map obj=new HashMap();    
+  obj.put("name","sonoo");    
+  obj.put("age",new Integer(27));    
+  obj.put("salary",new Double(600000));   
+  String jsonText = JSONValue.toJSONString(obj);  
+  System.out.print(jsonText);  
+}}    
+Output:
+
+{"name":"sonoo","salary":600000.0,"age":27}
+Java JSON Array Encode
+Let's see a simple example to encode JSON array in java.
+
+import org.json.simple.JSONArray;  
+public class JsonExample1{    
+public static void main(String args[]){    
+  JSONArray arr = new JSONArray();  
+  arr.add("sonoo");    
+  arr.add(new Integer(27));    
+  arr.add(new Double(600000));   
+  System.out.print(arr);  
+}}    
+Output:
+
+["sonoo",27,600000.0]
+Java JSON Array Encode using List
+Let's see a simple example to encode JSON array using List in java.
+
+import java.util.ArrayList;  
+import java.util.List;  
+import org.json.simple.JSONValue;  
+public class JsonExample1{    
+public static void main(String args[]){    
+  List arr = new ArrayList();  
+  arr.add("sonoo");    
+  arr.add(new Integer(27));    
+  arr.add(new Double(600000));   
+  String jsonText = JSONValue.toJSONString(arr);  
+  System.out.print(jsonText);  
+}}    
+Output:
+
+["sonoo",27,600000.0]
+2) Java JSON Decode
+Let's see a simple example to decode JSON string in java.
+
+import org.json.simple.JSONObject;  
+import org.json.simple.JSONValue;  
+public class JsonDecodeExample1 {  
+public static void main(String[] args) {  
+    String s="{\"name\":\"sonoo\",\"salary\":600000.0,\"age\":27}";  
+    Object obj=JSONValue.parse(s);  
+    JSONObject jsonObject = (JSONObject) obj;  
+  
+    String name = (String) jsonObject.get("name");  
+    double salary = (Double) jsonObject.get("salary");  
+    long age = (Long) jsonObject.get("age");  
+    System.out.println(name+" "+salary+" "+age);  
+}  
+}  
+Output:
+
+sonoo 600000.0 27

@@ -1,0 +1,9 @@
+  {
+      "employee": {
+          "name": "Bob",
+          "salary": 56000,
+          "comments": "JSON doesn't support comments. It is not a standard.But you can do some tricks such as adding extra attribute for comment in JSON object."
+
+
+      }
+  }

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a, b, c, d, e;
+
+        let names = [ 'david', ' eddie', ' alex', ' michel', ' sammy'];
+
+        /* [a,b,c,d,e] = names;
+
+        document.write(a);
+        document.write(b);
+        document.write(c);
+        document.write(d);
+        document.write(e); */
+
+        /* let others;
+
+        [a, b, ...others] = names;
+
+        document.write(a);
+
+        document.write(b);
+
+        document.write(others); */
+
+        let year, model;
+        ({year, model}= {
+            make: 'bmw',
+            model: '745li',
+            year:  2010,
+            value: 5000
+        });
+
+        document.write(year);
+        document.write(model);
+
+    </script>
+</body>
+</html>

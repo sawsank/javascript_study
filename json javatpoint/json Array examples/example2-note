@@ -1,0 +1,9 @@
+The XML representation of above JSON example is given below.
+
+<menu id="file" value="File">  
+  <popup>  
+    <menuitem value="New" onclick="CreateDoc()" />  
+    <menuitem value="Open" onclick="OpenDoc()" />  
+    <menuitem value="Save" onclick="SaveDoc()" />  
+  </popup>  
+</menu>  

@@ -1,0 +1,43 @@
+JSON vs XML
+A list of differences between JSON and XML are given below.
+
+No.	JSON	XML
+1)	JSON stands for JavaScript Object Notation.	XML stands for eXtensible Markup Language.
+2)	JSON is simple to read and write.	XML is less simple than JSON.
+3)	JSON is easy to learn.	XML is less easy than JSON.
+4)	JSON is data-oriented.	XML is document-oriented.
+5)	JSON doesn't provide display capabilities.	XML provides the capability to display data because it is a markup language.
+6)	JSON supports array.	XML doesn't support array.
+7)	JSON is less secured than XML.	XML is more secured.
+8)	JSON files are more human readable than XML.	XML files are less human readable.
+9)	JSON supports only text and number data type.	XML support many data types such as text, number, images, charts, graphs etc. Moreover, XML offeres options for transferring the format or structure of the data with actual data.
+ 
+JSON Example
+{"employees":[  
+    {"name":"Vimal", "email":"vjaiswal1987@gmail.com"},  
+    {"name":"Rahul", "email":"rahul12@gmail.com"},  
+    {"name":"Jai", "email":"jai87@gmail.com"}  
+]} 
+
+XML Example
+<employees>  
+    <employee>  
+        <name>Vimal</name>   
+        <email>vjaiswal1987@gmail.com</email>  
+    </employee>  
+    <employee>  
+        <name>Rahul</name>   
+        <email>rahul12@gmail.com</email>  
+    </employee>  
+    <employee>  
+        <name>Jai</name>   
+        <email>jai87@gmail.com</email>  
+    </employee>  
+</employees> 
+
+
+Similarities between JSON and XML:
+Both are simple and open.
+Both supports unicode. So internationalization is supported by JSON and XML both.
+Both represents self describing data.
+Both are interoperable or language-independent.

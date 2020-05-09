@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+        <script >
+            function Person(first,last,age,gender,interests){
+                this.name = {
+                    first : first,
+                    last : last
+                };
+                this.age = age;
+                this.gender = gender;
+                this.interests = interests;
+                this.bio = function(){
+                    document.write(this.name.first+ ' ' +this.name.last+ ' is ' +this.age+ ' years old. he likes ' + this.interests[0]+ ' and ' +this.interests[1]+ '.');
+                };
+                this.greeting = function() {
+                    alert('hi I\'m' +this.name.first+'.');
+                };
+            }
+            Person.prototype.farewell = function(){
+                alert(this.name.first + 'has left the building, Bye for now!');
+            };
+            let person1 = new Person('bob', 'smith', 32, 'male', ['music','skiing'] );
+            person1['age']
+            person1.interests[1]
+            person1.bio()
+        </script>
+    </body>
+</html>

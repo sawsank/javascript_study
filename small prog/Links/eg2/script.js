@@ -1,0 +1,1 @@
+document.getElementById("demo").innerHTML = "the href of the first link is" + document.links[0].href;

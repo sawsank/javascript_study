@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+        <script>
+            function EmployeeDetails(){
+                var name = 'Mayank';
+                var age = 30;
+                var designation = "Developer";
+                var salary = 10000;
+
+                var calculateBonus = function(amount) {
+                    salary = salary + amount;
+                    return salary;
+                }
+
+                return{
+                    name: name,
+                    age: age,
+                    designation: designation,
+                    calculateBonus: calculateBonus
+                }
+            };
+
+            var newEmployee = EmployeeDetails()
+
+            var userName = newEmployee.name;
+            var userAge =  newEmployee.age;
+            var userDescription = newEmployee.designation;
+            document.write(userName + "<br/>");
+
+            //this will result in undefined value
+            //var userName = newEmployee.salary;
+
+            var userName = newEmployee.calculateBonus(1000);
+            document.write(userName);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,1 @@
+document.getElementById("demo").innerHTML = "Numbers of anchors are:" + document.anchors.length;

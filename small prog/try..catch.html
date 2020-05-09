@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+        <script>
+            /* let a = undefined/"panama";
+            console.log(a); */
+
+            /* function beforeTryCatch(){
+                let obj = undefined;
+                console.log(obj.b);
+                console.log('if the previous lines of code throws an exception you\'ll never see this');
+            } */
+
+            //beforeTryCatch();
+
+            /* function afterTryCath(){
+                try {
+                    let obj = undefined;
+                console.log(obj.b);
+                console.log('if the previous lines of code throws an exception you\'ll never see this');
+                } catch (error) {
+                    console.log('i caight an exception' + error.message);
+                } finally{
+                    console.log('this will happen no matter what');
+                }
+                console.log('my application is still running');
+            } */
+
+            function performCalculation(obj){
+                if(!obj.hasOwnProperty('0')){
+                    throw nowError('object missing property');
+                }
+                //continue with calculation w/ obj.b
+                return b;
+            }
+
+            function performHigherLevelOperation(){
+                let obj ={};
+                let value = 0;
+                try{
+                    value= performCalculation(obj);
+                }catch (error){
+                    console.log(error.message);
+                }
+
+                if(value == 0) {
+
+                }
+            }
+            performHigherLevelOperation();
+        </script>
+    </body>
+</html>

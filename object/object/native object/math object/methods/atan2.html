@@ -1,0 +1,38 @@
+<!--Returns the arctangent of the quotient of its arguments.
+
+-->
+<!--
+    Return Value
+
+    Math.atan2( ±0, -0 ) returns ±PI.
+Math.atan2( ±0, +0 ) returns ±0.
+Math.atan2( ±0, -x ) returns ±PI for x < 0.
+Math.atan2( ±0, x ) returns ±0 for x > 0.
+Math.atan2( y, ±0 ) returns -PI/2 for y > 0.
+Math.atan2( ±y, -Infinity ) returns ±PI for finite y > 0.
+Math.atan2( ±y, +Infinity ) returns ±0 for finite y > 0.
+Math.atan2( ±Infinity, +x ) returns ±PI/2 for finite x.
+Math.atan2( ±Infinity, -Infinity ) returns ±3*PI/4.
+Math.atan2( ±Infinity, +Infinity ) returns ±PI/4.
+-->
+<html>   
+   <head>
+      <title>JavaScript Math atan2() Method</title>
+   </head>
+   
+   <body>      
+      <script type = "text/javascript">
+         var value = Math.atan2(90,15);
+         document.write("First Test Value : " + value ); 
+         
+         var value = Math.atan2(15,90);
+         document.write("<br />Second Test Value : " + value ); 
+         
+         var value = Math.atan2(0, -0);
+         document.write("<br />Third Test Value : " + value ); 
+         
+         var value = Math.atan2(+Infinity, -Infinity);
+         document.write("<br />Fourth Test Value : " + value ); 
+      </script>      
+   </body>
+</html>

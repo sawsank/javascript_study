@@ -1,0 +1,35 @@
+<!--Used to find a match between a regular expression and a string, and to replace the matched substring with a new substring.
+
+-->
+
+//It simply returns a new changed string.<br>
+<html>
+   <head>
+      <title>JavaScript String replace() Method</title>
+   </head>
+   
+   <body>   
+      <script type = "text/javascript">
+         var re = /apples/gi;
+         var str = "Apples are round, and apples are juicy.";
+         var newstr = str.replace(re, "oranges");        
+         document.write(newstr ); 
+      </script>      
+   </body>
+</html><br><br>
+
+//it shows how to switch words in a string.
+<br><html>
+    <head>
+       <title>JavaScript String replace() Method</title>
+    </head>
+    
+    <body>     
+       <script type = "text/javascript">
+          var re = /(\w+)\s(\w+)/;
+          var str = "zara ali";
+          var newstr = str.replace(re, "$2, $1");
+          document.write(newstr);
+       </script>   
+    </body>
+ </html>

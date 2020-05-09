@@ -1,0 +1,16 @@
+The XML representation of above JSON example is given below.
+
+<employees>  
+    <employee>  
+        <name>Shyam</name>   
+        <email>shyamjaiswal@gmail.com</email>  
+    </employee>  
+    <employee>  
+        <name>Bob</name>   
+        <email>bob32@gmail.com</email>  
+    </employee>  
+    <employee>  
+        <name>Jai</name>   
+        <email>jai87@gmail.com</email>  
+    </employee>  
+</employees>  

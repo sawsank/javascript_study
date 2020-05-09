@@ -1,0 +1,1 @@
+document.getElementById("demo").innerHTML = "number of links:" + document.links.length;
